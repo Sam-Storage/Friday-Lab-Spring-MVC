@@ -2,6 +2,7 @@ package edu.greenriver.sdev.randomnumbersgenerate.controller;
 
 import edu.greenriver.sdev.randomnumbersgenerate.service.NumberService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -15,6 +16,6 @@ public class NumberController {
 
     @RequestMapping("/random")
     public String genNumber(){
-        return String.valueOf(service);
+        return String.valueOf(service.between(1,20));
     }
 }
