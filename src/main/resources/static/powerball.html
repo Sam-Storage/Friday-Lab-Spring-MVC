@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+    <link rel="stylesheet" type="text/css" href="../style/styles.css"/>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+
+    <main id="content">
+
+        <section class="number">
+            <p th:text="${powerballNums[0]}"></p>
+        </section>
+        <section class="number">
+            <p th:text="${powerballNums[1]}"></p>
+        </section>
+        <section class="number">
+            <p th:text="${powerballNums[2]}"></p>
+        </section>
+        <section class="number">
+            <p th:text="${powerballNums[3]}"></p>
+        </section>
+        <section class="number">
+            <p th:text="${powerballNums[4]}"></p>
+        </section>
+        <section class="number">
+            <p th:text="${powerballNums[5]}"></p>
+        </section>
+
+    </main>
+</body>
+</html>
