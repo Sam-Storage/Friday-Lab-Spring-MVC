@@ -17,11 +17,11 @@ public class NumberController {
         this.service = service;
     }
 
-//    @RequestMapping("/random")
-//    public String genNumber(Model modelVars){
-//        modelVars.addAttribute("num", service.between(1,20));
-//        return "genNumber";
-//    }
+    @RequestMapping("/random")
+    public String genNumber(Model modelVars){
+        modelVars.addAttribute("num", service.between(1,20));
+        return "randnum";
+    }
 
 //    @RequestMapping("/random")
 //    public String genNumber(Model modelVars){
@@ -35,22 +35,22 @@ public class NumberController {
 //        powerballNums.add(service.between(1,29));
 //        modelVars.addAttribute("powerballNums", powerballNums);
 //
-//        return "genNumber";
+//        return "powerball";
 //    }
 
-    @RequestMapping("/random")
-    public String genNumber(Model modelVars){
-
-        List<Integer> LargGroupNums = new ArrayList<>();
-
-        for (int i = 0; i < 50; i++){
-            LargGroupNums.add(service.between(1,20));
-        }
-
-        modelVars.addAttribute("LargGroupNums", LargGroupNums);
-
-        return "genNumber";
-    }
+//    @RequestMapping("/random")
+//    public String genNumber(Model modelVars){
+//
+//        List<Integer> LargGroupNums = new ArrayList<>();
+//
+//        for (int i = 0; i < 50; i++){
+//            LargGroupNums.add(service.between(1,20));
+//        }
+//
+//        modelVars.addAttribute("LargGroupNums", LargGroupNums);
+//
+//        return "largeGroupNums";
+//    }
 
 
 
